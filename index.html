@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EpiShop — E-commerce</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <!-- Ho usato success, perché odio il blu-->
+  <header class="bg-success text-white py-3">
+    <!-- Logo a sinistra, link nav a destra. Usa container + d-flex + justify-content-between -->
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="fs-3 m-0">EpiShop</h1>
+
+      <nav>
+        <a href="javascript:void(0)" class="text-white text-decoration-none mx-2">Prodotti</a>
+        <a href="javascript:void(0)" class="text-white text-decoration-none mx-2">Offerte</a>
+        <a href="javascript:void(0)" class="d-none d-md-inline-block text-white text-decoration-none mx-2">Contatti</a>
+        <a href="javascript:void(0)" class="d-none d-lg-inline-block text-white text-decoration-none mx-2">Account</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="bg-light py-5">
+    <!-- Hero: titolo grande, sottotitolo, bottone CTA. Usa container + text-center + classi utility -->
+    <div class="container d-flex flex-column justify-content-between align-items-center">
+      <h2 class="fs-1 fw-bold mb-3">Saldi Estivi</h2>
+      <p class="fs-5 text-muted mb-4">Scopri le offerte sui pordotti in evidenza, fino al 50% di sconto</p>
+      <button class="bg-success border-0 rounded"><a href="javascript:void(0)"
+          class="d-inline-block bg-success text-white text-decoration-none py-2 px-4 rounded">Vedi i
+          prodotti</a></button>
+    </div>
+  </section>
+
+  <main class="container my-4 flex-grow-1">
+    <div class="row">
+
+      <aside class="col-lg-3 d-none d-lg-block">
+        <!-- Sidebar categorie. Visibile solo da lg in su (d-none d-lg-block) -->
+        <div class="bg-light p-3 rounded border">
+          <h3 class="fs-5 fw-bold mb-3">Categorie</h3>
+          <p class="m-0 mb-2">Scarpe</p>
+          <p class="m-0 mb-2">T-shirt</p>
+          <p class="m-0 mb-2">Borse</p>
+          <p class="m-0 mb-2">Accesori</p>
+        </div>
+      </aside>
+
+      <section class="col-12 col-lg-9">
+        <!-- Griglia prodotti responsive (1 / 2 / 3 / 4 per riga in base al breakpoint) -->
+        <h2 class="fs-3 fw-bold mb-4 text-center text-md-start">Prodotti in evidenza</h2>
+        <div class="row">
+          <article class="col-12 col-sm-6 col-xl-4 col-xxl-3 mb-3">
+            <div class="border rounded p-3 bg-white shadow-sm">
+              <div class="text-bg-secondary mb-2 rounded" style="height: 160px;"></div>
+              <h3 class="fs-5 fw-bold m-0">Sneaker Run</h3>
+              <p class="text-muted m-0">&euro; 89,00</p>
+            </div>
+          </article>
+
+          <article class="col-12 col-sm-6 col-xl-4 col-xxl-3 mb-3">
+            <div class="border rounded p-3 bg-white shadow-sm">
+              <div class="text-bg-secondary mb-2 rounded" style="height: 160px;"></div>
+              <h3 class="fs-5 fw-bold m-0">T-shirt Basic</h3>
+              <p class="text-muted m-0">&euro; 19,00</p>
+            </div>
+          </article>
+
+          <article class="col-12 col-sm-6 col-xl-4 col-xxl-3 mb-3">
+            <div class="border rounded p-3 bg-white shadow-sm">
+              <div class="text-bg-secondary mb-2 rounded" style="height: 160px;"></div>
+              <h3 class="fs-5 fw-bold m-0">Borsa City</h3>
+              <p class="text-muted m-0">&euro; 49,00</p>
+            </div>
+          </article>
+
+          <article class="col-12 col-sm-6 col-xl-4 col-xxl-3 mb-3">
+            <div class="border rounded p-3 bg-white shadow-sm">
+              <div class="text-bg-secondary mb-2 rounded" style="height: 160px;"></div>
+              <h3 class="fs-5 fw-bold m-0">Borsa City</h3>
+              <p class="text-muted m-0">&euro; 49,00</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="bg-dark flex-column text-white py-4 mt-5">
+    <!-- Footer scuro centrato con copyright -->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4"><a href="#" class="text-decoration-none text-white">Azienda</a></div>
+        <div class="col-md-4"><a href="#" class="text-decoration-none text-white">Aiuto</a></div>
+        <div class="col-md-4"><a href="#" class="text-decoration-none text-white">Social</a></div>
+      </div>
+    </div>
+    <p>&copy; 2026 EpiShop - tutti i diritti riservati</p>
+  </footer>
+
+</body>
+
+</html>
