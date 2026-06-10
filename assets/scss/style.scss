@@ -1,0 +1,80 @@
+@use 'partial/variables' as v;
+
+@mixin tema($bg, $testo, $card-bg, $bordo, $muted) {
+    background-color: $bg;
+    color: $testo;
+
+    header {
+        background-color: v.$default-color;
+    }
+
+    .card {
+        background-color: $card-bg;
+        border-color: $bordo;
+    }
+
+    .card .card_next {
+        color: $muted;
+    }
+
+    .card-footer {
+        background-color: $card-bg;
+    }
+
+    aside .bg-light {
+        background-color: $card-bg !important;
+        border-color: $bordo;
+        color: $testo;
+    }
+
+    .modal-content {
+        background-color: $card-bg;
+        color: $testo;
+    }
+}
+
+body {
+    @include tema(#fafafa, #1a1a1a, #ffffff, #e0e0e0, #6c757d);
+    transition: background-color 200ms ease, color 200ms ease;
+}
+
+// Classe dark per toggle
+body.dark {
+    @include tema(v.$dark-bg, v.$dark-text, v.$dark-card-bg, v.$dark-border, v.$dark-muted);
+
+    header {
+        background-color: v.$default-color-dark;
+    }
+
+    .card {
+        box-shadow: v.$dark-shadow-card;
+
+        &:hover {
+            box-shadow: v.$dark-shadow-card-hover;
+        }
+    }
+
+    .card-body {
+        color: v.$dark-text;
+
+        .text-muted {
+            color: v.$dark-muted !important;
+        }
+    }
+}
+
+.card {
+    border-radius: v.$radius-base;
+    box-shadow: v.$shadow-card;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        box-shadow: v.$shadow-card-hover;
+        transform: translateY(-3px);
+    }
+
+    .card-title {
+        font-weight: bold;
+    }
+
+}
