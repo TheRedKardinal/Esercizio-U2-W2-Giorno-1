@@ -43,6 +43,17 @@
     }
 }
 
+// Mixin per cambio dinamico del colore delle card
+@mixin card-prodotto($accent) {
+    border-top: 4px solid $accent;
+    .card-title {
+        color: $accent;
+    }
+    &:hover {
+        box-shadow: 0 6px 18px rgba($accent, 0.3);
+    }
+}
+
 // Override BootStrap
 .btn-primary,
 .bg-primary,
@@ -114,4 +125,16 @@ body.dark {
         font-weight: bold;
     }
 
+}
+
+.card.scarpe {
+    @include card-prodotto(hsl(220, 60%, 40%));
+}
+
+.card.abbigliamento {
+    @include card-prodotto(hsl(0, 70%, 50%));
+}
+
+.card.accessori {
+    @include card-prodotto(hsl(45, 90%, 50%));
 }
