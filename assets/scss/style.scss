@@ -11,6 +11,7 @@
     .card {
         background-color: $card-bg;
         border-color: $bordo;
+
         @include solo-su(768px) {
             padding: 24px;
         }
@@ -40,6 +41,33 @@
     @media (min-width: $bw) {
         @content;
     }
+}
+
+// Override BootStrap
+.btn-primary,
+.bg-primary,
+.navbar.bg-primary {
+    background-color: $default-color !important;
+    border-color: $default-color !important;
+}
+
+.btn-primary:hover {
+    background-color: darken($default-color, 10%) !important;
+}
+
+.btn-outline-primary {
+    color: $default-color !important;
+    border: $default-color !important;
+
+    &:hover,
+    &:active {
+        background-color: $default-color !important;
+        color: white;
+    }
+}
+
+.text-primary {
+    color: $default-color !important;
 }
 
 body {
