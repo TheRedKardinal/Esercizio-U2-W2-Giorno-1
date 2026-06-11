@@ -9,6 +9,11 @@ body .card {
   background-color: #ffffff;
   border-color: #e0e0e0;
 }
+@media (min-width: 768px) {
+  body .card {
+    padding: 24px;
+  }
+}
 body .card .card_next {
   color: #6c757d;
 }
@@ -38,6 +43,11 @@ body.dark header {
 body.dark .card {
   background-color: #2c2c2c;
   border-color: #444444;
+}
+@media (min-width: 768px) {
+  body.dark .card {
+    padding: 24px;
+  }
 }
 body.dark .card .card_next {
   color: #9ca3af;

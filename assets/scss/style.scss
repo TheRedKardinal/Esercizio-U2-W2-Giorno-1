@@ -11,6 +11,9 @@
     .card {
         background-color: $card-bg;
         border-color: $bordo;
+        @include solo-su(768px) {
+            padding: 24px;
+        }
     }
 
     .card .card_next {
@@ -30,6 +33,12 @@
     .modal-content {
         background-color: $card-bg;
         color: $testo;
+    }
+}
+
+@mixin solo-su($bw) {
+    @media (min-width: $bw) {
+        @content;
     }
 }
 
