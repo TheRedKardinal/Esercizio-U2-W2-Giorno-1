@@ -89,67 +89,16 @@
       <section class="col-12 col-lg-9">
         <!-- Griglia prodotti responsive (1 / 2 / 3 / 4 per riga in base al breakpoint) -->
         <h2 class="fs-3 fw-bold mb-4 text-center text-md-start">Prodotti in evidenza <span class="badge text-bg-danger">New</span></h2>
-        <div class="row">
 
-          <article class="col-12 col-sm-6 col-xl-4 col-xxl-3 mb-3">
-            <div class="card h-100 shadow-sm">
-              <img src="https://placehold.co/300x180" class="card-img-top"></img>
-              <div class="card-body">
-                <h5 class="card-title">Sneaker Run</h5>
-                <p class="card-text text-muted">Scarpa leggera per la corsa, suola in gomma traspirante.</p>
-                <p class="fw-bold fs-5 m-0">&euro; 89,00</p>
-              </div>
-              <div class="card-footer bg-white border-0">
-                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
-                  data-bs-target="#prodotto-1">Dettagli</button>
-              </div>
-            </div>
-          </article>
+        <div id="filtri" class="mb-4">
+          <button type="button" class="btn btn-outline-primary me-2 mb-2 active" data-categoria="tutti">Tutti</button>
+          <button type="button" class="btn btn-outline-primary me-2 mb-2" data-categoria="scarpe">Scarpe</button>
+          <button type="button" class="btn btn-outline-primary me-2 mb-2" data-categoria="abbigliamento">Abbigliamento</button>
+          <button type="button" class="btn btn-outline-primary me-2 mb-2" data-categoria="accessori">Accessori</button>
+        </div>
 
-          <article class="col-12 col-sm-6 col-xl-4 col-xxl-3 mb-3">
-            <div class="card h-100 shadow-sm">
-              <img src="https://placehold.co/300x180" class="card-img-top"></img>
-              <div class="card-body">
-                <h5 class="card-title">T-shirt Basic</h5>
-                <p class="card-text text-muted">Cotone biologico, taglio regolare, disponibile in 5 colori.</p>
-                <p class="fw-bold fs-5 m-0">&euro; 19,00</p>
-              </div>
-              <div class="card-footer bg-white border-0">
-                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
-                  data-bs-target="#prodotto-2">Dettagli</button>
-              </div>
-            </div>
-          </article>
+        <div class="row" id="container-prodotti">
 
-          <article class="col-12 col-sm-6 col-xl-4 col-xxl-3 mb-3">
-            <div class="card h-100 shadow-sm">
-              <img src="https://placehold.co/300x180" class="card-img-top"></img>
-              <div class="card-body">
-                <h5 class="card-title">Borsa city</h5>
-                <p class="card-text text-muted">Tessuto resistente, tasca interna, cinghia regolabile.</p>
-                <p class="fw-bold fs-5 m-0">&euro; 49,00</p>
-              </div>
-              <div class="card-footer bg-white border-0">
-                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
-                  data-bs-target="#prodotto-3">Dettagli</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-12 col-sm-6 col-xl-4 col-xxl-3 mb-3">
-            <div class="card h-100 shadow-sm">
-              <img src="https://placehold.co/300x180" class="card-img-top"></img>
-              <div class="card-body">
-                <h5 class="card-title">T-shirt Basic</h5>
-                <p class="card-text text-muted">Cotone biologico, taglio regolare, disponibile in 5 colori.</p>
-                <p class="fw-bold fs-5 m-0">&euro; 19,00</p>
-              </div>
-              <div class="card-footer bg-white border-0">
-                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
-                  data-bs-target="#prodotto-4">Dettagli</button>
-              </div>
-            </div>
-          </article>
 
         </div>
       </section>

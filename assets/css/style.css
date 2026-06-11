@@ -13,9 +13,9 @@
   color: #198754 !important;
   border: #198754 !important;
 }
-.btn-outline-primary:hover, .btn-outline-primary:active {
+.btn-outline-primary:hover, .btn-outline-primary.active {
   background-color: #198754 !important;
-  color: white;
+  color: white !important;
 }
 
 .text-primary {

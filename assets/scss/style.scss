@@ -71,9 +71,9 @@
     border: v.$default-color !important;
 
     &:hover,
-    &:active {
+    &.active {
         background-color: v.$default-color !important;
-        color: white;
+        color: white !important;
     }
 }
 
