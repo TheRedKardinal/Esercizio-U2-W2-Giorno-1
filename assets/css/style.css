@@ -1,17 +1,120 @@
-/* Error: Undefined variable.
- *    ,
- * 50 |     background-color: $default-color !important;
- *    |                       ^^^^^^^^^^^^^^
- *    '
- *   assets/scss/style.scss 50:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 50 \2502      background-color: $default-color !important;\a    \2502                        ^^^^^^^^^^^^^^\a    \2575 \a   assets/scss/style.scss 50:23  root stylesheet";
+.btn-primary,
+.bg-primary,
+.navbar.bg-primary {
+  background-color: #198754 !important;
+  border-color: #198754 !important;
 }
+
+.btn-primary:hover {
+  background-color: rgb(17.03125, 91.96875, 57.225) !important;
+}
+
+.btn-outline-primary {
+  color: #198754 !important;
+  border: #198754 !important;
+}
+.btn-outline-primary:hover, .btn-outline-primary:active {
+  background-color: #198754 !important;
+  color: white;
+}
+
+.text-primary {
+  color: #198754 !important;
+}
+
+body {
+  background-color: #fafafa;
+  color: #1a1a1a;
+}
+body header {
+  background-color: #198754;
+}
+body .card {
+  background-color: #ffffff;
+  border-color: #e0e0e0;
+}
+@media (min-width: 768px) {
+  body .card {
+    padding: 24px;
+  }
+}
+body .card .card_next {
+  color: #6c757d;
+}
+body .card-footer {
+  background-color: #ffffff;
+}
+body aside .bg-light {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0;
+  color: #1a1a1a;
+}
+body .modal-content {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+body {
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+body.dark header {
+  background-color: #198754;
+}
+body.dark .card {
+  background-color: #2c2c2c;
+  border-color: #444444;
+}
+@media (min-width: 768px) {
+  body.dark .card {
+    padding: 24px;
+  }
+}
+body.dark .card .card_next {
+  color: #9ca3af;
+}
+body.dark .card-footer {
+  background-color: #2c2c2c;
+}
+body.dark aside .bg-light {
+  background-color: #2c2c2c !important;
+  border-color: #444444;
+  color: #f0f0f0;
+}
+body.dark .modal-content {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+body.dark header {
+  background-color: rgb(13.046875, 70.453125, 43.8375);
+}
+body.dark .card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+body.dark .card:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+body.dark .card-body {
+  color: #f0f0f0;
+}
+body.dark .card-body .text-muted {
+  color: #9ca3af !important;
+}
+
+.card {
+  border-radius: 0.375rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  transform: translateY(-3px);
+}
+.card .card-title {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
